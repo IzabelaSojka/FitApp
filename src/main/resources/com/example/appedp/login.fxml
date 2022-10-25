@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="727.0" style="-fx-background-color: linear-gradient(to right, pink,orange);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appedp.Login">
+   <children>
+      <ImageView fx:id="icon" fitHeight="225.0" fitWidth="224.0" layoutX="64.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../picture/fit.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginTextField" layoutX="401.0" layoutY="166.0" prefHeight="33.0" prefWidth="242.0" promptText="login" style="-fx-border-color: black;" />
+      <PasswordField fx:id="enterPasswordField" layoutX="401.0" layoutY="248.0" prefHeight="33.0" prefWidth="242.0" promptText="password" style="-fx-border-color: black;" />
+      <Button fx:id="loginButton" layoutX="451.0" layoutY="360.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: black;" text="Login" textAlignment="CENTER" textFill="#bca332">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="374.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in to your account" wrappingWidth="309.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="registerButton" layoutX="451.0" layoutY="422.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: black;" text="Register" textAlignment="CENTER" textFill="#bca332">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="info" layoutX="401.0" layoutY="315.0" prefHeight="27.0" prefWidth="242.0" textFill="#ff0101">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView glyphName="USER" layoutX="374.0" layoutY="191.0" size="30" wrappingWidth="20.571428298950195" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="369.0" layoutY="274.0" size="30" />
+      <Hyperlink fx:id="forgotPassword" layoutX="446.0" layoutY="295.0" onAction="#reminderPassword" text="Forgot your password?" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Button fx:id="startButton" layoutX="26.0" layoutY="21.0" mnemonicParsing="false" onAction="#startButtonOnAction" prefHeight="33.0" prefWidth="142.0" style="-fx-background-color: black;" text="Back to Start" textAlignment="CENTER" textFill="#bca332">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="476.0" layoutY="3.0" prefHeight="70.0" prefWidth="244.0">
+         <children>
+            <ImageView fx:id="clock" fitHeight="33.0" fitWidth="39.0" layoutX="16.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../picture/clock.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="time" layoutX="59.0" layoutY="19.0" prefHeight="33.0" prefWidth="177.0" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="info1" layoutX="511.0" layoutY="393.0" prefHeight="27.0" prefWidth="61.0" text="OR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

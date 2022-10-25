@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="525.0" prefWidth="727.0" style="-fx-background-color: linear-gradient(to right, pink,orange);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appedp.Timer">
+   <children>
+      <ImageView fx:id="icon" fitHeight="195.0" fitWidth="192.0" layoutX="60.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../picture/fit.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="intervalsTextField" layoutX="60.0" layoutY="143.0" prefHeight="33.0" prefWidth="124.0" promptText="Number of intervals" style="-fx-border-color: black;" text="1" />
+      <ImageView fx:id="start" fitHeight="81.0" fitWidth="81.0" layoutX="590.0" layoutY="90.0" onMouseClicked="#start" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../picture/start.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="activityMinutes" layoutX="240.0" layoutY="143.0" prefHeight="33.0" prefWidth="58.0" style="-fx-border-color: black;" />
+      <ChoiceBox fx:id="activitySeconds" layoutX="306.0" layoutY="143.0" prefHeight="33.0" prefWidth="58.0" style="-fx-border-color: black;" />
+      <ChoiceBox fx:id="restMinutes" layoutX="420.0" layoutY="143.0" prefHeight="33.0" prefWidth="58.0" style="-fx-border-color: black;" />
+      <ChoiceBox fx:id="restSeconds" layoutX="486.0" layoutY="143.0" prefHeight="33.0" prefWidth="58.0" style="-fx-border-color: black;" />
+      <Label fx:id="activity" layoutX="273.0" layoutY="90.0" prefHeight="17.0" prefWidth="124.0" text="Activity">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="rest" layoutX="463.0" layoutY="90.0" prefHeight="17.0" prefWidth="124.0" text="Rest">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="122.0" text="Minutes" />
+      <Label layoutX="420.0" layoutY="122.0" text="Minutes" />
+      <Label layoutX="306.0" layoutY="122.0" text="Seconds" />
+      <Label layoutX="486.0" layoutY="122.0" text="Seconds" />
+      <Text fx:id="info" layoutX="364.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="273.13671875">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="383.0" layoutY="333.0" prefHeight="92.0" prefWidth="99.0" style="-fx-background-color: pink;">
+         <children>
+            <Text fx:id="countMinutes" layoutX="14.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="509.0" layoutY="333.0" prefHeight="112.0" prefWidth="99.0" style="-fx-background-color: pink;">
+         <children>
+            <Text fx:id="countsSeconds" layoutX="14.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Label fx:id="activity1" layoutX="60.0" layoutY="118.0" prefHeight="17.0" prefWidth="124.0" text="Number of intervals">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="60.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training timer" wrappingWidth="217.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="478.0" layoutY="5.0" prefHeight="70.0" prefWidth="244.0">
+         <children>
+            <ImageView fx:id="clock" fitHeight="33.0" fitWidth="39.0" layoutX="16.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../picture/clock.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="time" layoutX="59.0" layoutY="19.0" prefHeight="33.0" prefWidth="177.0" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
